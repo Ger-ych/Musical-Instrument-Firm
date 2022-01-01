@@ -8,67 +8,43 @@
     
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/header.css">
     <link rel="stylesheet" href="/static/css/carousel.css">
     <link rel="stylesheet" href="static/css/headers.css">
-
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <link href="/static/img/favicon.jpg" rel="shortcut icon">
     <title>IMusic</title>
 </head>
 <body>
     <div class="wrapper">
-          
-            <nav class="py-2 bg-light border-bottom">
-                <div class="container d-flex flex-wrap">
-                <ul class="nav me-auto">
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">О нас</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Наша продукция</a></li>
-                </ul>
+        <nav class="py-2 bg-light border-bottom top-header">
+            <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="tel:+79999999999" class="nav-link link-dark px-2">+7 (999) 999-99-99</a></li>
+            </ul>
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="mailto:email@mail.ru" class="nav-link link-dark px-2">email@mail.ru</a></li>
+            </ul>
+            </div>
+        </nav>
+        <header class="p-3 mb-3 border-bottom bot-header">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <img src="static/img/favicon.jpg" alt="" height="40">
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-dark">О нас</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Наша продукция</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Контакты</a></li>
+                    </ul>
+                    
+                    <button class="btn btn-primary" type="submit">Оставить заявку</button>
+                    <button class="mx-2 btn btn-outline-primary" type="submit">Администрирование</button>
                 </div>
-            </nav>
-            <header class="py-3 mb-4 border-bottom">
-                <div class="container d-flex flex-wrap justify-content-center">
-                <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                    <img src="static/img/favicon.jpg" alt="" height="40">
-                    <span class="fs-4">IMusic</span>
-                </a>
-                <button class="btn btn-primary">Оставить заявку</button>
-                <button class="ms-2 btn btn-outline-primary">Администрирование</button>
-                </div>
-            </header>
-  
-            <!--
-            <div class="container"> 
-             <header>
-                <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">IMusic</a>
-                        <p>Телефон: +7 (999) 999-99-99</p>
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">О нас</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Наша продукция</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Контакты</a>
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary" type="submit">Оставить заявку</button>
-                            <button class="ms-2 btn btn-outline-primary" type="submit">Администрирование</button>
-                        </div>
-                    </div>
-                </nav>
-            </header> 
-        </div> -->
+            </div>
+        </header>
         <main>
             <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -210,5 +186,9 @@
             </footer>
         </main>
     </div>
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="static/js/set_carousel_height.js"></script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+.top-header {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+header button {
+    width: 180px;
+}
