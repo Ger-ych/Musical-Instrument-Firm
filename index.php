@@ -2,56 +2,26 @@
 <html lang="en">
 <head>
     <!-- META -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <?php require "snippets/head/default_metatags.php" ?>
+
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/global.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/footer.css">
+    <?php require "snippets/head/default_css_connections.php" ?>
+
     <link rel="stylesheet" href="static/css/carousel.css">
     <link rel="stylesheet" href="static/css/headers.css">
     <link rel="stylesheet" href="static/css/featurettes.css">
 
     <!-- JS -->
-    <script src="https://kit.fontawesome.com/d4c10ee18e.js" crossorigin="anonymous"></script>
+    <?php require "snippets/head/default_js_connection.php" ?>
 
-    <link href="/static/img/favicon.jpg" rel="shortcut icon">
-    <title>IMusic</title>
+    <?php require "snippets/head/favicon_link.php" ?>
+    <title>Продажа музыкальных инструментов и другой подобной продукции в Москве. Доставка по всей России! | IMusic</title>
 </head>
 <body>
     <div class="wrapper">
-        <nav class="py-2 bg-light border-bottom top-header">
-            <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto">
-                <li class="nav-item"><a href="tel:+79999999999" class="nav-link link-dark px-2">+7 (999) 999-99-99</a></li>
-            </ul>
-            <ul class="nav me-auto">
-                <li class="nav-item"><a href="mailto:email@mail.ru" class="nav-link link-dark px-2">email@mail.ru</a></li>
-            </ul>
-            </div>
-        </nav>
-        <header class="p-3 mb-3 border-bottom bot-header">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                        <img src="static/img/favicon.jpg" alt="" height="40">
-                    </a>
+        <?php require "snippets/header.php" ?>
 
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-dark">О нас</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Наша продукция</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Контакты</a></li>
-                    </ul>
-                    
-                    <button class="btn btn-primary" type="submit">Оставить заявку</button>
-                    <button class="mx-2 btn btn-outline-primary" type="submit">Администрирование</button>
-                </div>
-            </div>
-        </header>
-        <main>
+        <main class="main">
             <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
@@ -67,7 +37,7 @@
                             <div class="carousel-caption text-start">
                                 <h1>Широкий асортимент</h1>
                                 <p>У нас широкий асортимент различной музыкальной продукции.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Подробнее »</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/catalog.php">Подробнее »</a></p>
                             </div><!-- /.carousel-caption -->
                         </div><!-- /.container -->
                     </div><!-- /.carousel-item -->
@@ -77,9 +47,9 @@
 
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1>IMusic - фирма музыкальных инструметов.</h1>
+                                <h1>IMusic - фирма по продаже музыкальных инструментов.</h1>
                                 <p></p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Подробнее »</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/about.php">Подробнее »</a></p>
                             </div><!-- /.carousel-caption -->
                         </div><!-- /.container -->
                     </div><!-- /.carousel-item -->
@@ -120,22 +90,22 @@
                         <img src="static/img/headers/headers_img_1.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
                         <h2>Низкая цена</h2>
-                        <p>Мы закупаем товары напрямую у поставщика во избежание наценок от посредников.</p>
-                        <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
+                        <p>Мы закупаем товары напрямую у поставщика или производим сами во избежание наценок от посредников.</p>
+                        <p><a class="btn btn-secondary" href="/about.php">Подробнее »</a></p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
                         <img src="static/img/headers/headers_img_2.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
                         <h2>Гарантия качества</h2>
                         <p>Мы всегда следим за качесвом продукции и проверяем каждый инструмент.</p>
-                        <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
+                        <p><a class="btn btn-secondary" href="/about.php">Подробнее »</a></p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
                         <img src="static/img/headers/headers_img_3.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
                         <h2>Доставка</h2>
-                        <p>Мы доставляем продукцию по всей России в фирменных безопасных сейфах.</p>
-                        <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
+                        <p>Мы доставляем продукцию по всей России в фирменных безопасных кейсах.</p>
+                        <p><a class="btn btn-secondary" href="/about.php">Подробнее »</a></p>
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
 
@@ -161,7 +131,7 @@
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
                         <h2 class="featurette-heading">Нам нужны новые клиенты. <span class="text-muted">Скидка за приглашённых друзей.</span></h2>
-                        <p class="lead">Если Вы приглашаете друзей к нам, то мы в свою очередь делаем скидку им и Вам на следующие покупки. А также если Вы являетесь потенциальным постянным клиентом, например образовательным учреждением, то у Вас есть возможность выгодного сотрудничесва с нами.</p>
+                        <p class="lead">Если Вы приглашаете друзей к нам, то мы в свою очередь делаем вам скидку на следующие покупки. А также если Вы являетесь потенциальным постянным клиентом, например образовательным учреждением, то у Вас есть возможность выгодного сотрудничесва с нами.</p>
                     </div><!-- /.col-md-7 -->
 
                     <div class="col-md-5 order-md-1">
@@ -195,53 +165,13 @@
                 <!-- /END THE FEATURETTES -->
 
             </div><!-- /.container -->
-
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-sm-12 col-md-6">
-                            <h6>О нас</h6>
-                            <p class="text-justify">IMusic - компания по продаже и перепродаже от популярных поставщиков музыкальных инструментов и подобной продукции. Мы одни из лидеров в этой области с многолетним стажем. С нами просто и выгодно!</p>
-                        </div><!-- /.col-md-6 -->
-
-                        <div class="col-xs-6 col-md-3">
-                            <h6>Карта сайта</h6>
-                            <ul class="footer-links">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Наша продукция</a></li>
-                            <li><a href="">Оставить заявку</a></li>
-                            <li><a href="">Юридическая информация</a></li>
-                            </ul>
-                        </div><!-- /.col-md-3 -->
-                    </div><!-- /.row -->
-                    <hr>
-                </div><!-- /.container -->
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                            <p class="copyright-text">&copy; 2017–2021 IMusic, Inc. Москва, Россия, улица Шаболовка, 40.</a>
-                            </p>
-                        </div><!-- /.col-md-8 -->
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <ul class="social-icons">
-                            <li><a class="facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="instagram" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a class="vkontakte" href="#" title="VK"><i class="fa fa-vk"></i></a></li>   
-                            </ul>
-                        </div><!-- /.col-md-4 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </footer>
         </main>
+        
+        <?php require "snippets/footer.php" ?>
     </div>
     
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/c3a3b0ff12.js"></script>
+    <?php require "snippets/body/default_js_connection.php" ?>
     
     <script src="static/js/set_carousel_height.js"></script>
 </body>

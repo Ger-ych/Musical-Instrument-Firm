@@ -1,0 +1,1 @@
+<link href="/static/img/favicon.jpg" rel="shortcut icon">
