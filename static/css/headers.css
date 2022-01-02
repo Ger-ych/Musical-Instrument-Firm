@@ -1,3 +1,14 @@
 .headers {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    text-align: center;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.headers img {
+    object-fit: cover;
+    object-position: center;
 }

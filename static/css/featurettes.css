@@ -1,0 +1,47 @@
+.featurette h2 {
+    font-size: 50px;
+    line-height: 50px;
+    color: #5a5a5a;
+}
+.featurette h2>span {
+    color: #6c757d!important;
+}  
+.featurette p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #5a5a5a;
+}
+.featurette-divider {
+    margin: 5rem 0;
+    height: 2px!important;
+}
+.featurette-contants-phone > a {
+    font-size: 20px;
+    color: #5a5a5a!important;
+    text-decoration: underline;
+    transition: 300ms;
+}
+.featurette-contants-phone > a:hover {
+    color: #212529!important;
+}
+.featurette-contants-email > a {
+    font-size: 20px;
+    color: #5a5a5a!important;
+    text-decoration: underline;
+    transition: 300ms;
+}
+.featurette-contants-email > a:hover {
+    color: #212529!important;
+}
+.featurette-contants-address {
+    font-size: 16px!important;
+    color: #5a5a5a!important;
+    text-decoration: underline;
+}
+
+@media(max-width: 576px) {
+    .featurette h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
