@@ -175,5 +175,8 @@
         
         <?php require "snippets/footer.php" ?>
     </div>
+
+    <!-- JS -->
+    <?php require "snippets/body/default_js_connection.php" ?>
 </body>
 </html>

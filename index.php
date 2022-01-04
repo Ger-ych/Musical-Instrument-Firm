@@ -7,9 +7,9 @@
     <!-- CSS -->
     <?php require "snippets/head/default_css_connections.php" ?>
 
-    <link rel="stylesheet" href="static/css/carousel.css">
-    <link rel="stylesheet" href="static/css/headers.css">
-    <link rel="stylesheet" href="static/css/featurettes.css">
+    <link rel="stylesheet" href="static/css/index/carousel.css">
+    <link rel="stylesheet" href="static/css/index/headers.css">
+    <link rel="stylesheet" href="static/css/index/featurettes.css">
 
     <!-- JS -->
     <?php require "snippets/head/default_js_connection.php" ?>
@@ -61,7 +61,7 @@
                             <div class="carousel-caption text-end">
                                 <h1>Возможность оставить заявку Онлайн</h1>
                                 <p>Вы можете оставить заявку прямо сейчас, и менеджер свяжется с вами в ближайшее время.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Оставить заявку »</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/requisition.php">Оставить заявку »</a></p>
                             </div><!-- /.carousel-caption -->
                         </div><!-- /.container -->
                     </div><!-- /.carousel-item -->
@@ -173,6 +173,6 @@
     <!-- JS -->
     <?php require "snippets/body/default_js_connection.php" ?>
     
-    <script src="static/js/set_carousel_height.js"></script>
+    <script src="static/js/index/set_carousel_height.js"></script>
 </body>
 </html>

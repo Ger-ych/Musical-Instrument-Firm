@@ -6,7 +6,7 @@
 
     <!-- CSS -->
     <?php require "snippets/head/default_css_connections.php" ?>
-    <link rel="stylesheet" href="static/css/featurettes.css">
+    <link rel="stylesheet" href="static/css/index/featurettes.css">
 
     <!-- JS -->
     <?php require "snippets/head/default_js_connection.php" ?>
@@ -90,5 +90,8 @@
         
         <?php require "snippets/footer.php" ?>
     </div>
+
+    <!-- JS -->
+    <?php require "snippets/body/default_js_connection.php" ?>
 </body>
 </html>

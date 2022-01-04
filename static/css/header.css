@@ -3,6 +3,6 @@
     font-weight: 600;
 }
 
-.bot-header button {
+.bot-header a.btn {
     width: 180px;
 }

@@ -7,12 +7,12 @@
             </div><!-- /.col-md-6 -->
 
             <div class="col-xs-6 col-md-3">
-                <h6>Карта сайта</h6>
+                <h6>Навигация по сайту</h6>
                 <ul class="footer-links">
                 <li><a href="/about.php">О нас</a></li>
                 <li><a href="/contacts.php">Контакты</a></li>
                 <li><a href="/catalog.php">Наша продукция</a></li>
-                <li><a href="">Оставить заявку</a></li>
+                <li><a href="/requisition.php">Оставить заявку</a></li>
                 <li><a href="">Юридическая информация</a></li>
                 </ul>
             </div><!-- /.col-md-3 -->

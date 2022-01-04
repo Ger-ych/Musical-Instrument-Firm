@@ -1,0 +1,24 @@
+.main-requisition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 24px 0 24px;
+}
+.main-requisition > div {
+    max-width: 500px;
+}
+
+.errors-list {
+    color: red;
+    font-size: 14px;
+    list-style-type: none;
+    margin-top: 24px!important;
+    padding-left: 0;
+}
+
+.success-msg {
+    color: green;
+    font-size: 14px;
+    margin-top: 24px!important;
+}
