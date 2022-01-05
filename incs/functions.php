@@ -41,7 +41,8 @@ function getIp() {
     }
   }
 
-function create_requisition($link, $time, $user_name, $user_phone) {
+function create_requisition($link, $user_name, $user_phone) {
+  $time = date('Y-m-d H:i:s');
   $user_ip = getIp();
 
   $sql_request = "INSERT INTO `requisitions`(`time`, `user_name`, `user_phone`, `user_ip`) VALUES ('$time','$user_name','$user_phone','$user_ip')";

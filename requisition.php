@@ -17,11 +17,12 @@
             //debug($errors);
         }
         else {
-            $time = date('Y-m-d H:i:s');
+            // Create Requisition in DB
+            
             $user_name = $fields_requisition['name']['value'];
             $user_phone = $fields_requisition['phone']['value'];
 
-            $result = create_requisition($link, $time, $user_name, $user_phone);
+            $result = create_requisition($link, $user_name, $user_phone);
 
             if($result) {
                 $success_msg = 'Заявка успешно отправлена. Менеджер свяжется с Вами в ближайшее время.';
@@ -29,6 +30,10 @@
             else {
                 $errors .= "<li>Неизвестная ошибка! Повторите попытку позже.</li>";
             }
+
+            // Send Mail Admin Notifications
+
+            
         }
     }
 
