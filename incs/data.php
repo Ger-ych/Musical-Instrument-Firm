@@ -13,13 +13,6 @@ $fields_requisition = [
     ],
 ];
 
-$fields_login = [
-    'login' => [
-        'field_name' => 'Логин',
-        'required' => 1,
-    ],
-    'password' => [
-        'field_name' => 'Пароль',
-        'required' => 1,
-    ],
-];
+// REQUISITION
+
+$notification_emails = ['obhvat@inbox.ru'];

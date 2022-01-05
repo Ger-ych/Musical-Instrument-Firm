@@ -24,16 +24,24 @@
 
             $result = create_requisition($link, $user_name, $user_phone);
 
+            // Send Mail Notifications
+            
+            $subject = "=?utf-8?B?".base64_encode("Поступила заявка от пользователя | IMusic")."?=";
+
+            $message = "Пользователь просит с ним связаться: \n Имя пользователя: $user_name; \n Номер телефона: $user_phone; \n IP-адрес пользователя: ".getIp()."; \n ";
+            $headers = "From: imusic\r\nReply-to: IMusic\r\nContent-type: text/plain; charset=utf-8\r\n";
+            
+            foreach ($notification_emails as $to) {
+                mail($to, $subject, $message, $headers);
+            }
+  
+            
             if($result) {
                 $success_msg = 'Заявка успешно отправлена. Менеджер свяжется с Вами в ближайшее время.';
             }
             else {
                 $errors .= "<li>Неизвестная ошибка! Повторите попытку позже.</li>";
             }
-
-            // Send Mail Admin Notifications
-
-            
         }
     }
 
