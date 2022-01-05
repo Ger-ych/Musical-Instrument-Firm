@@ -21,8 +21,7 @@
             <li><a href="/contacts.php" class="nav-link px-2 link-dark">Контакты</a></li>
             </ul>
             
-            <a href="/requisition.php" class="btn btn-primary" type="submit">Оставить заявку</a>
-            <a href="" class="mx-2 btn btn-outline-primary" type="submit">Администрирование</a>
+            <a href="/requisition.php" class="btn btn-outline-primary" type="submit">Оставить заявку</a>
         </div>
     </div>
 </header>

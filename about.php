@@ -19,7 +19,11 @@
 
         <main class="main container">
             <div class="p-5 mb-4 bg-light rounded-3">
-                <a class="fs-5" style="text-decoration: underline;" href="">Юридическая информация компании IMusic</a>
+                <a class="fs-5" style="text-decoration: underline; cursor: pointer;" <?php require "snippets/legal_information/attr_btn.php" ?>>Юридическая информация компании IMusic</a>
+                
+                <!-- Modal Legal Information -->
+                <?php require "snippets/legal_information/modal.php" ?>
+                
                 <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">IMusic - фирма по продаже музыкальных инструментов</h1>
                     <p class="col-md-8 fs-4">IMusic - компания по производству, продаже и перепродаже от популярных поставщиков музыкальных инструментов и подобной продукции. Мы одни из лидеров в этой области с многолетним стажем. С нами просто и выгодно!</p>    
@@ -49,6 +53,9 @@
         
         <?php require "snippets/footer.php" ?>
     </div>
+
+    <!-- MODALS -->
+    <?php require "snippets/legal_information/modal.php" ?>
 
     <!-- JS -->
     <?php require "snippets/body/default_js_connection.php" ?>

@@ -68,7 +68,11 @@
 
             <div class="container px-4 py-5" id="icon-grid">
                 <h2 class="pb-2 border-bottom">Контакты</h2>
+                <a class="fs-5" style="text-decoration: underline; cursor: pointer;" <?php require "snippets/legal_information/attr_btn.php" ?>>Юридическая информация компании IMusic</a>
 
+                <!-- Modal Legal Information -->
+                <?php require "snippets/legal_information/modal.php" ?>
+                
                 <div class="row featurette">
                     <div class="col-md-7">
                         <br />

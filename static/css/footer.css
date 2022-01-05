@@ -39,7 +39,7 @@
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: #3366cc;
+    color: #3366cc!important;
     text-decoration: none;
 }
 .footer-links.inline li {

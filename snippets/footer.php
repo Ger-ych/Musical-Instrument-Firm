@@ -13,10 +13,14 @@
                 <li><a href="/contacts.php">Контакты</a></li>
                 <li><a href="/catalog.php">Наша продукция</a></li>
                 <li><a href="/requisition.php">Оставить заявку</a></li>
-                <li><a href="">Юридическая информация</a></li>
+                <li><a <?php require "snippets/legal_information/attr_btn.php" ?>>Юридическая информация</a></li>
                 </ul>
             </div><!-- /.col-md-3 -->
         </div><!-- /.row -->
+
+        <!-- Modal Legal Information -->
+        <?php require "snippets/legal_information/modal.php" ?>
+        
         <hr>
     </div><!-- /.container -->
 
