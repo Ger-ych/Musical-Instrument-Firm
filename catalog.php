@@ -65,6 +65,7 @@
                                         </div><!-- /.card-body -->
                                     </div><!-- /.card -->
                                 </div>
+                                <!-- modal -->
                                 <div class='modal fade' id='staticBackdrop$id' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel$id' aria-hidden='true'>
                                     <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
                                         <div class='modal-content'>
