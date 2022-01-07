@@ -39,7 +39,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">О проекте</a>
+      <a href="#о-проекте">О проекте</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
