@@ -36,24 +36,24 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Содержание</summary>
   <ol>
     <li>
       <a href="#о-проекте">О проекте</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#руководство-пользователя">Руководство пользователя</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li>
+        <a href="#руководство-администратора">Руководство администратора</a>
+        <ul>
+            <li><a href="#о-проекте">Заявки от пользователей</a></li>
+            <li><a href="#о-проекте">Товары размещённые на сайте</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#информация-для-разработчиков">Информация для разработчиков</a>
+    </li>
   </ol>
 </details>
 
@@ -62,6 +62,11 @@
 <!-- ABOUT THE PROJECT -->
 ## О проекте
 
+Контрольная работа. Вариант №7 группы вариантов тем заданий 2: Фирма, осуществляющая продажу музыкальных инструментов (IMusic).
+
+Данный проект представляет собой простой динамичный сайт на чистом PHP вымышленной фирмы по производству, продаже и перепродаже музыкальных инструментов. 
+
+❗ Все данные на сайте не достоверны, а изображения и другие объекты, подверженные авторскому праву, не используются и не будут использованы в коммерческих целях, а только для обучения.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
