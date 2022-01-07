@@ -1,9 +1,11 @@
 <?php
 
+// Function for outputting data for convenient application debugging
 function debug($data) {
     echo '<pre>' . print_r($data, 1) . '<pre>';
 }
 
+// A function to get a form object from a POST request
 function load($data) {
     foreach($_POST as $k => $v) {
         if(array_key_exists($k, $data)) {
@@ -13,6 +15,7 @@ function load($data) {
     return $data;
 }
 
+// This function validates the data of the form object according to the validation conditions specified in this object
 function validate($data) {
     $errors = '';
 
@@ -25,6 +28,7 @@ function validate($data) {
     return $errors;
 }
 
+// Function for getting the user's IP-address
 function getIp() {
     $keys = [
       'HTTP_CLIENT_IP',
@@ -41,6 +45,7 @@ function getIp() {
     }
   }
 
+// This function automates the process of creating an requisition in the Database
 function create_requisition($link, $user_name, $user_phone) {
   $time = date('Y-m-d H:i:s');
   $user_ip = getIp();
@@ -49,6 +54,7 @@ function create_requisition($link, $user_name, $user_phone) {
   return mysqli_query($link, $sql_request);
 }
 
+// This function automates the process of receiving products from the Database
 function get_products($link) {
   $sql_request = "SELECT * FROM `products`";
   return mysqli_query($link, $sql_request);

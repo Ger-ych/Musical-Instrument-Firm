@@ -152,7 +152,7 @@
                             <p class="featurette-contants-phone"><a href="tel:+79999999999"><i class="fas fa-phone"></i> +7 (999) 999-99-99</a></p>
                             <p class="featurette-contants-email"><a href="mailto:email@mail.ru"><i class="fas fa-envelope-square"></i> email@mail.ru</a></p>
                             <p class="featurette-contants-address"><i class="fas fa-map-marker-alt"></i> Москва, Россия, улица Шаболовка, 40</p>
-                        </div>
+                        </div><!-- /.featurette-contants -->
                     </div><!-- /.col-md-7 -->
 
                     <div class="col-md-5">
@@ -168,7 +168,7 @@
         </main>
         
         <?php require "snippets/footer.php" ?>
-    </div>
+    </div><!-- /.wrapper -->
     
     <!-- JS -->
     <?php require "snippets/body/default_js_connection.php" ?>

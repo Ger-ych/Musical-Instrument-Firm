@@ -1,7 +1,11 @@
+/* Top header */
+
 .top-header {
     text-decoration: underline;
     font-weight: 600;
 }
+
+/* Bottom header */
 
 .bot-header a.btn {
     width: 180px;

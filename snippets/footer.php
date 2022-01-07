@@ -1,3 +1,5 @@
+<!-- Footer -->
+
 <footer class="site-footer">
     <div class="container">
         <div class="row justify-content-between">

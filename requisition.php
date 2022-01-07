@@ -1,30 +1,35 @@
 <?php
-
+    // including necessary files
     require_once __DIR__ . '/incs/data.php';
     require_once __DIR__ . '/incs/functions.php';
     require_once 'incs/database.php';
 
+    // assigning default values to form notification variables
     $errors = '';
     $success_msg = '';
 
+    // check for POST request
     if(!empty($_POST)) {
         //debug($_POST);
 
+        // getting an empty form object
         $fields_requisition = load($fields_requisition);
+        
         //debug($fields_requisition);
 
+        // form validation
         if($errors = validate($fields_requisition)) {
             //debug($errors);
         }
         else {
-            // Create Requisition in DB
+            // create requisition in Database
             
             $user_name = $fields_requisition['name']['value'];
             $user_phone = $fields_requisition['phone']['value'];
 
             $result = create_requisition($link, $user_name, $user_phone);
 
-            // Send Mail Notifications
+            // send mail notifications
             
             $subject = "=?utf-8?B?".base64_encode("Поступила заявка от пользователя | IMusic")."?=";
 
@@ -35,7 +40,7 @@
                 mail($to, $subject, $message, $headers);
             }
   
-            
+            // verification of successful entry of the requisition into the Database
             if($result) {
                 $success_msg = 'Заявка успешно отправлена. Менеджер свяжется с Вами в ближайшее время.';
             }
@@ -76,16 +81,17 @@
                         <div class="col-12">
                             <label for="name" class="form-label">Имя <span style="color: red">*</span></label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Введите Ваше имя" value="" required="">
-                        </div>
+                        </div><!-- /.сщд-12 -->
 
                         <div class="col-12">
                             <label for="phone-input" class="form-label">Номер телефона <span style="color: red">*</span></label>
                             <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Введите Ваш номер телефона" value="" required="">
-                        </div>
-                    </div>
+                        </div><!-- /.сщд-12 -->
+                    </div><!-- /.row -->
 
                     <ul class="errors-list">
                         <?php 
+                            // form error output
                             if($errors) {
                                 echo $errors;
                             }
@@ -94,6 +100,7 @@
 
                     <p class="success-msg">
                         <?php 
+                            // outputting a successful form notification
                             if($success_msg) {
                                 echo $success_msg;
                             }
@@ -105,9 +112,9 @@
                     <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить »</button>
                     <p class="pt-2 text-muted text-center"><i class="fas fa-lock"></i> Нажимая кнопку "Отправить »" вы соглашаетесь на обработку персональных данных.</p>
                 </form>
-            </div>
+            </div><!-- /.col-md-7 -->
         </main>
-    </div>
+    </div><!-- /.wrapper -->
 
     <!-- JS -->
     <?php require "snippets/body/default_js_connection.php" ?>

@@ -1,3 +1,5 @@
+/* Featurette */
+
 .featurette h2 {
     font-size: 50px;
     line-height: 50px;
@@ -15,6 +17,9 @@
     margin: 5rem 0;
     height: 2px!important;
 }
+
+/* Contacts */
+
 .featurette-contants-phone > a {
     font-size: 20px;
     color: #5a5a5a!important;
@@ -24,6 +29,7 @@
 .featurette-contants-phone > a:hover {
     color: #212529!important;
 }
+
 .featurette-contants-email > a {
     font-size: 20px;
     color: #5a5a5a!important;
@@ -33,11 +39,14 @@
 .featurette-contants-email > a:hover {
     color: #212529!important;
 }
+
 .featurette-contants-address {
     font-size: 16px!important;
     color: #5a5a5a!important;
     text-decoration: underline;
 }
+
+/* @media */
 
 @media(max-width: 576px) {
     .featurette h2 {

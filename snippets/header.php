@@ -1,3 +1,5 @@
+<!-- Header -->
+
 <nav class="py-2 bg-light border-bottom top-header">
     <div class="container d-flex flex-wrap">
     <ul class="nav me-auto">
@@ -6,7 +8,7 @@
     <ul class="nav me-auto">
         <li class="nav-item"><a href="mailto:email@mail.ru" class="nav-link link-dark px-2"><i class="fas fa-envelope-square"></i> email@mail.ru</a></li>
     </ul>
-    </div>
+    </div><!-- /.container -->
 </nav>
 <header class="p-3 mb-3 border-bottom bot-header">
     <div class="container">
@@ -22,6 +24,6 @@
             </ul>
             
             <a href="/requisition.php" class="btn btn-outline-primary" type="submit">Оставить заявку</a>
-        </div>
-    </div>
+        </div><!-- /.d-flex -->
+    </div><!-- /.container -->
 </header>

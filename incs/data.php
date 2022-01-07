@@ -1,6 +1,6 @@
 <?php
 
-// FORMS
+// Forms
 
 $fields_requisition = [
     'name' => [
@@ -13,6 +13,6 @@ $fields_requisition = [
     ],
 ];
 
-// REQUISITION
+// Requisition
 
 $notification_emails = ['obhvat@inbox.ru'];

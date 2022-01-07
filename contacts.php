@@ -20,49 +20,49 @@
 
         <main class="main">
             <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Мы в социальных сетях</h2>
+                <h2 class="pb-2 border-bottom">Мы в социальных сетях</h2>
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4  lh-1 fw-bold">Мы активно ведём социальные сети</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4  lh-1 fw-bold">Мы активно ведём социальные сети</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                                    </li>
+                                </ul>
+                            </div><!-- /.d-flex -->
+                        </div><!-- /.card -->
+                    </div><!-- /.col -->
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Следите за нашими новостями, чтобы не пропустить самые лучшие скидки.</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Следите за нашими новостями, чтобы не пропустить самые лучшие скидки.</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                                    </li>
+                                </ul>
+                            </div><!-- /.d-flex -->
+                        </div><!-- /.card -->
+                    </div><!-- /.col -->
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Ссылки на наши социальные сети Вы можете увидеть внизу страницы в подвале сайта.</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Ссылки на наши социальные сети Вы можете увидеть внизу страницы в подвале сайта.</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="static/img/contacts/socialn_seti.jpg" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                                    </li>
+                                </ul>
+                            </div><!-- /.d-flex -->
+                        </div><!-- /.card -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
 
             <div class="b-example-divider"></div>
 
@@ -89,11 +89,11 @@
                         <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid" style="height: 500px!important" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6479faaaebf9f1ec161d3955ad02a1a91ae0b1598bd9891aba0580cb4fe54b6b&amp;source=constructor" width="500" height="500" frameborder="0"></iframe>
                     </div><!-- /.col-md-5 -->
                 </div><!-- /.featurette -->
-            </div>
+            </div><!-- /.container -->
         </main>
         
         <?php require "snippets/footer.php" ?>
-    </div>
+    </div><!-- /.wrapper -->
 
     <!-- JS -->
     <?php require "snippets/body/default_js_connection.php" ?>
