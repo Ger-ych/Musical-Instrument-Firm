@@ -1,0 +1,46 @@
+.link-modal-product {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container-card-image-top {
+    height: 225px;
+    width: 100%;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    transition: 300ms;
+}
+
+.container-modal-product-image {
+    width: 100%;
+    height: 425px;
+}
+.modal-product-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    transition: 300ms;
+}
+
+.modal-footer .btn-group>a {
+    width: 154px;
+}
+
+.product-block > .card {
+    height: 100%;
+}
+
+.product-block > .card > .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

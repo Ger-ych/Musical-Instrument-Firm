@@ -48,3 +48,8 @@ function create_requisition($link, $user_name, $user_phone) {
   $sql_request = "INSERT INTO `requisitions`(`time`, `user_name`, `user_phone`, `user_ip`) VALUES ('$time','$user_name','$user_phone','$user_ip')";
   return mysqli_query($link, $sql_request);
 }
+
+function get_products($link) {
+  $sql_request = "SELECT * FROM `products`";
+  return mysqli_query($link, $sql_request);
+}

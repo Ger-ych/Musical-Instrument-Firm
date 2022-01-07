@@ -1,3 +1,13 @@
+<?php
+
+    require_once __DIR__ . '/incs/functions.php';
+    require_once 'incs/database.php';
+
+    $products_list = get_products($link);
+    //ebug($products_list);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +16,7 @@
 
     <!-- CSS -->
     <?php require "snippets/head/default_css_connections.php" ?>
+    <link rel="stylesheet" href="static/css/catalog/product.css">
 
     <!-- JS -->
     <?php require "snippets/head/default_js_connection.php" ?>
@@ -20,23 +31,67 @@
         <main class="main">
             <div class="album py-5">
                 <div class="container">
+                    <p class='text-muted mb-4'><i class='fas fa-exclamation-circle'></i> Данная страница предназначена лишь для ознакомления с нашей продукцией. Для того, чтобы приобрести инструмент необходимо оформить заявку и сообщить нужный товар менеджеру.</p>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <?php 
+                            foreach ($products_list as $product) {
+                                $id = $product['id'];
+                                $name = $product['name'];
+                                $short_description = $product['short_description'];
+                                $description = $product['description'];
+                                $price = $product["price"];
+                                $image_url = $product['image_url'];
 
-                                <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                echo "
+                                <div class='col product-block'>
+                                    <div class='card shadow-sm'>
+                                        <a class='link-modal-product' type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop$id'></a>
+
+                                        <div class='container-card-image-top'>
+                                            <img src='$image_url' class='bd-placeholder-img card-img-top'>
+                                        </div>
+                                        
+                                        <div class='card-body'>
+                                            <h5>$name</h5>
+                                            <p class='card-text'>$short_description</p>
+                                            <div class='btn-group w-100'>
+                                                <a type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop$id' class='btn btn-sm w-100 btn-outline-secondary'>Подробнее</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
+                                <div class='modal fade' id='staticBackdrop$id' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel$id' aria-hidden='true'>
+                                    <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
+                                        <div class='modal-content'>
+                                            <div class='modal-header'>
+                                                <h4 class='modal-title' id='staticBackdropLabel$id'>$name</h4>
+                                                <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                                            </div>
+                                            <div class='modal-body'>
+                                            <div class='container-modal-product-image'>
+                                                <img src='$image_url' class='bd-placeholder-img modal-product-image'>
+                                            </div>
+
+                                            <h5 class='fw-6'>Описание: </h5>
+                                            <p>
+                                                $description
+                                            </p>
+
+                                            </div>
+                                            <div class='modal-footer d-block'>
+                                                <div class='d-flex justify-content-between align-items-center'>
+                                                    <h5>от ".$price."₽</h5>
+                                                    <div class='btn-group'>
+                                                        <a type='button' class='btn btn-secondary' data-bs-dismiss='modal'>« Назад</a>
+                                                        <a href='requisition.php' type='button' class='btn btn-primary'>Оставить заявку »</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
