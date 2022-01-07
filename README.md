@@ -1,22 +1,4 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -43,16 +25,30 @@
     </li>
     <li>
       <a href="#руководство-пользователя">Руководство пользователя</a>
+      <ul>
+          <li><a href="#информация-о-компании">Информация о компании</a></li>
+          <li><a href="#каталог">Каталог</a></li>
+          <li><a href="#заявки">Заявки</a></li>
+      </ul>
     </li>
     <li>
         <a href="#руководство-администратора">Руководство администратора</a>
         <ul>
+            <li><a href="#о-проекте">Редактирование информации о компании</a></li>
             <li><a href="#о-проекте">Заявки от пользователей</a></li>
             <li><a href="#о-проекте">Товары размещённые на сайте</a></li>
         </ul>
     </li>
     <li>
         <a href="#информация-для-разработчиков">Информация для разработчиков</a>
+        <ul>
+            <li><a href="#о-проекте">Концепция веб-сайта</a></li>
+            <li><a href="#о-проекте">Архитектура сайта</a></li>
+            <li><a href="#о-проекте">Программное обеспечение</a></li>
+            <li><a href="#о-проекте">Структура веб-сайта</a></li>
+            <li><a href="#о-проекте">Структура базы данных</a></li>
+            <li><a href="#о-проекте">Описание программы</a></li>
+        </ul>
     </li>
   </ol>
 </details>
@@ -71,19 +67,22 @@
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- USER GUIDE -->
+## Руководство пользователя
 
-### Built With
+Данный сайт является простым и несёт по большей мере информативную функцию. Взаимодействие с пользователем не ттак широко. Навигация по сайту осуществляется с помощью ссылок в шапке сайта или в его подвале.
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+### Информация о компании
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+Всю информацию о компании можно посмотреть в разделе "О нас". Контакты показаны в соответсвующем разделе или внизу главной страницы. Ссылки на социальные сети можно найти ТОЛЬКО в подвале сайта и ТОЛЬКО на страницах, где этот подвал присутствует (например, на странице заявки его нет).
+
+### Каталог
+
+Вся информация в каталоге нужна для ознакомления с примерным ассортиментом компании и с примерными ценами. Для того, чтобы сделать заказ пользователю еобходимо оформить заявку.
+
+### Заявки
+
+Для оформления заявки нужно кликнуть на соответсвующую кнопку и заполнить форму. Данные проверяются лишь на "пустоту", поэтому стоит вводить корректное имя и номер телефона. После успешного оформления заявки администраторам отправляется уведомление.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
