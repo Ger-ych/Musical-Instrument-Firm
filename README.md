@@ -194,14 +194,14 @@ requisition.php
 
 Таблицы - `requisitions`, `products`
 
-`requisition`:
+`requisition` - таблица заявок:
 * `id`         - BIGINT - PRIMARY - AUTO_INCREMENT      - Необходимый уникальный ключ id.
 * `time`       - DATETIME - on update CURRENT_TIMESTAMP - Время создания заявки.
 * `user_name`  - TEXT - utf8_general_ci                 - Имя пользователя.
 * `user_phone` - TEXT - utf8_general_ci                 - Номер телефона пользователя.
 * `user_ip`    - TEXT - utf8_general_ci                    - IP-адрес пользователя.
 
-`products`:
+`products` - таблица товаров:
 * `id`                - BIGINT - PRIMARY - AUTO_INCREMENT - Необходимый уникальный ключ id.
 * `name`              - VARCHAR(256) - UNIQUE             - Уникальное название товара.
 * `short_description` - TEXT - utf8_general_ci            - Краткое описание товара на обложке.
