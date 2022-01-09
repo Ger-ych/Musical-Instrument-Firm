@@ -207,4 +207,6 @@ requisition.php
 * `short_description` - TEXT - utf8_general_ci            - Краткое описание товара на обложке.
 * `description`       - TEXT - utf8_general_ci            - Полное описание.
 * `price`             - INT                               - Цена товара "от".
-* `image`             - VARCHAR(1024) - utf8_general_ci   - Путь к изображению товара относительно корня сайта. Обычно медиа-файлы сохраняются в папку media. А для товаров имеется папка products_images/
+* `image`             - VARCHAR(1024) - utf8_general_ci   - Путь к изображению товара относительно корня сайта. Обычно медиа-файлы сохраняются в папку media. А для товаров имеется папка products_images/с
+
+<p align="right">(<a href="#top">back to top</a>)</p>
