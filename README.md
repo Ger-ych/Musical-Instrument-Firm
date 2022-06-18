@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Ger-ych/Musical-Instrument-Firm">
     <img src="static/img/favicon.jpg" alt="Logo" height="80">
   </a>
 
