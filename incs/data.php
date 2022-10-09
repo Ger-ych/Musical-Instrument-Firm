@@ -15,4 +15,4 @@ $fields_requisition = [
 
 // Requisition
 
-$notification_emails = ['obhvat@inbox.ru'];
+$notification_emails = [''];
